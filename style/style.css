@@ -1,0 +1,253 @@
+/*
+COULEURS
+$Blanc : #f4f4f4;
+$Vert : #1a3f47;
+$Jaune : #d4af47;
+*/
+
+/*
+FONT, POLICE
+@import url('https://fonts.googleapis.com/css2?family=Oranienbaum&display=swap');
+$FontSerif : 'Oranienbaum', serif;
+
+@import url('https://fonts.googleapis.com/css2?family=Quicksand&display=swap');
+$FontSansSerif : 'Quicksand', sans-serif;
+
+@import url('https://fonts.googleapis.com/css2?family=Artifika&display=swap');
+$FontSerif2 : 'Artifika', serif;
+*/
+
+@import url('https://fonts.googleapis.com/css2?family=Oranienbaum&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Quicksand&display=swap');
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  width: 100%;
+  min-height: 100vh;
+  background-image: url('../images/background.jpg');
+  background-size: cover;
+  background-attachment: fixed;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.img-profil {
+  border-radius: 50%;
+  width: 250px;
+  -webkit-box-shadow: 5px 5px 15px 5px rgba(0,0,0,0.34);
+  box-shadow: 5px 5px 15px 5px rgba(0,0,0,0.34);
+}
+
+h1 {
+  font-family: 'Oranienbaum', serif;
+  color: whitesmoke;
+  font-weight: 700;
+  letter-spacing: 10px;
+  font-size: 50px;
+  text-align: center;
+  margin-bottom: 25px;
+}
+
+h2 {
+  font-family: 'Quicksand', sans-serif;
+  color: #d4af47;
+  font-weight: 500;
+  letter-spacing: 5px;
+  font-size: 28px;
+  text-align: center;
+}
+
+p {
+  color: whitesmoke;
+  font-family: 'Quicksand', sans-serif;
+  width: 600px;
+  line-height: 30px;
+  text-align: justify;
+}
+
+.link-wagon {
+  width: 200px;
+  height: 40px;
+  background-color: #fd1015;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  transition: all 0.3s ease-in-out;
+}
+
+.link-wagon:hover {
+  transform: translate(-3px, -3px);
+  -webkit-box-shadow: 5px 4px 14px -3px rgba(0,0,0,0.73);
+  box-shadow: 5px 4px 14px -3px rgba(0,0,0,0.73);
+  transition: all 0.3s ease-in-out;
+}
+
+.link-wagon > img {
+  height: 40px;
+}
+
+.link-wagon > p {
+  width: 160px;
+  text-align: center;
+}
+
+a {
+  text-decoration: none;
+  color: whitesmoke;
+  font-weight: 900;
+}
+
+a:hover {
+  color: #d4af47;
+}
+
+ul {
+  display: flex;
+  justify-content: space-evenly;
+  width: 300px;
+}
+
+li {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+li > a {
+  color: #1a3f47;
+  background-color: #d4af47;
+  font-size: 25px;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s ease-in-out;
+}
+
+li > a:hover {
+  color: #1a3f47;
+  background-color: whitesmoke;
+  font-size: 25px;
+  transition: all 0.3s ease-in-out;
+}
+
+li:nth-child(1) > a:hover::before {
+  content: 'GitHub';
+  font-size: 15px;
+  font-weight: 500;
+  color: #1a3f47;
+  width: 50px;
+  height: 20px;
+  border-radius: 3px;
+  background-color: whitesmoke;
+  top: 50px;
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+li:nth-child(1) > a:hover::after {
+  content: '';
+  width: 2px;
+  height: 2px;
+  border-bottom: 5px whitesmoke solid;
+  border-top: 5px transparent solid;
+  border-left: 5px transparent solid;
+  border-right: 5px transparent solid;
+  top: 38px;
+  position: absolute;
+}
+
+li:nth-child(2) > a:hover::before {
+  content: 'LinkedIn';
+  font-size: 15px;
+  font-weight: 500;
+  color: #1a3f47;
+  width: 60px;
+  height: 20px;
+  border-radius: 3px;
+  background-color: whitesmoke;
+  top: 50px;
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+li:nth-child(2) > a:hover::after {
+  content: '';
+  width: 2px;
+  height: 2px;
+  border-bottom: 5px whitesmoke solid;
+  border-top: 5px transparent solid;
+  border-left: 5px transparent solid;
+  border-right: 5px transparent solid;
+  top: 38px;
+  position: absolute;
+}
+
+li:nth-child(3) > a:hover::before {
+  content: 'Twitter';
+  font-size: 15px;
+  font-weight: 500;
+  color: #1a3f47;
+  width: 50px;
+  height: 20px;
+  border-radius: 3px;
+  background-color: whitesmoke;
+  top: 50px;
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+li:nth-child(3) > a:hover::after {
+  content: '';
+  width: 2px;
+  height: 2px;
+  border-bottom: 5px whitesmoke solid;
+  border-top: 5px transparent solid;
+  border-left: 5px transparent solid;
+  border-right: 5px transparent solid;
+  top: 38px;
+  position: absolute;
+}
+
+@media (max-width: 720px) {
+  /* For a screen < 720px, this CSS will be read */
+  .content-description {
+    width: 80%;
+  }
+
+  p {
+  color: whitesmoke;
+  font-family: 'Quicksand', sans-serif;
+  width: 100%;
+  line-height: 30px;
+  text-align: justify;
+  }
+}
+
+@media (max-width: 540px) {
+  /* For a screen < 540px, this CSS will be read */
+  .img-profil {
+    border-radius: 50%;
+    width: 150px;
+    -webkit-box-shadow: 5px 5px 15px 5px rgba(0,0,0,0.34);
+    box-shadow: 5px 5px 15px 5px rgba(0,0,0,0.34);
+  }
+}
